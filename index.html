@@ -1,123 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ashnova Global | Official Website</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
-      text-align: center;
-    }
-
-    header {
-      padding: 40px 20px 20px;
-      animation: fadeIn 2s ease;
-    }
-
-    h1 {
-      font-size: 2.8em;
-      letter-spacing: 1px;
-    }
-
-    p {
-      color: #ccc;
-      font-size: 1.2em;
-      margin-top: 10px;
-    }
-
-    .hero {
-      margin: 40px 0;
-      width: 90%;
-      max-width: 800px;
-      height: 400px;
-      border-radius: 20px;
-      overflow: hidden;
-      box-shadow: 0 0 20px rgba(255,255,255,0.2);
-      animation: zoomIn 2s ease;
-    }
-
-    .hero img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .social {
-      margin: 30px 0;
-      display: flex;
-      gap: 20px;
-      justify-content: center;
-    }
-
-    .social a {
-      color: white;
-      font-size: 1.8em;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-
-    .social a:hover {
-      color: #00bcd4;
-      transform: scale(1.2);
-    }
-
-    footer {
-      margin-top: auto;
-      padding: 20px;
-      font-size: 0.9em;
-      color: #aaa;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes zoomIn {
-      from { opacity: 0; transform: scale(0.9); }
-      to { opacity: 1; transform: scale(1); }
-    }
-  </style>
-
-  <!-- Icons -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AshnovaGlobal - Official Website</title>
+    <style>
+        /* Basic CSS for styling the website */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .main-content {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        article {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form input[type="submit"] {
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Welcome to Ashnova Global</h1>
-    <p>Creative & Innovative Brand | Building Digital Experiences</p>
-  </header>
+    <header>
+        <h1>AshnovaGlobal</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-  <!-- Hero Image -->
-  <div class="hero">
-    <img src="https://images.unsplash.com/photo-1522199710521-72d69614c702?auto=format&fit=crop&w=800&q=80" alt="Ashnova Global Banner" />
-  </div>
+    <!-- Home Section -->
+    <div class="main-content" id="home">
+        <h2>Welcome to AshnovaGlobal</h2>
+        <p>AshnovaGlobal is your global partner for innovative services, blogs, and more. Explore our site to learn about us and read our latest blogs.</p>
+        
+        <!-- Ad Placeholder - Replace with actual ad script like Google Adsense -->
+        <div style="text-align: center; background-color: #e0e0e0; padding: 10px; margin: 20px 0;">
+            <h3>Advertisement</h3>
+            <p>This is a placeholder for ads. Add your ad script here, e.g., Google Adsense code.</p>
+        </div>
+    </div>
 
-  <!-- Social Links -->
-  <div class="social">
-    <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="https://youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
-    <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-    <a href="mailto:ashnova.global@email.com"><i class="fas fa-envelope"></i></a>
-  </div>
+    <!-- About Section -->
+    <div class="main-content" id="about">
+        <h2>About AshnovaGlobal</h2>
+        <p>We are a global company dedicated to providing high-quality services, including content creation, blogging, and digital marketing. Our mission is to connect people worldwide.</p>
+        <p>Founded in 2023, AshnovaGlobal has grown to serve clients across multiple continents.</p>
+    </div>
 
-  <footer>
-    © 2025 Ashnova Global. All rights reserved.
-  </footer>
+    <!-- Blog Section -->
+    <div class="main-content" id="blog">
+        <h2>Blog Section</h2>
+        <p>Here you can read our latest blogs. In a fully functional site, users could upload their own blogs.</p>
+        
+        <!-- Sample Blog Posts -->
+        <article>
+            <h3>Sample Blog Post 1: Introduction to AshnovaGlobal</h3>
+            <p>Published on: October 10, 2023</p>
+            <p>This is a sample blog post about how AshnovaGlobal is revolutionizing the digital world. We focus on user-friendly services and global outreach.</p>
+        </article>
+        
+        <article>
+            <h3>Sample Blog Post 2: Tips for Digital Marketing</h3>
+            <p>Published on: October 15, 2023</p>
+            <p>In this post, we share tips on how to improve your digital marketing strategy. Stay tuned for more updates!</p>
+        </article>
+        
+        <!-- Form for Uploading Blogs (Won't work without backend) -->
+        <h3>Upload Your Blog (For Demo Only)</h3>
+        <form action="upload.php" method="post">  <!-- Replace with actual backend file -->
+            <label for="title">Blog Title:</label>
+            <input type="text" id="title" name="title" placeholder="Enter blog title" required>
+            
+            <label for="content">Blog Content:</label>
+            <textarea id="content" name="content" rows="5" placeholder="Write your blog here" required></textarea>
+            
+            <input type="submit" value="Upload Blog">
+        </form>
+        <p>Note: This form does not work in pure HTML. You need a server-side script (e.g., PHP) to handle uploads.</p>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="main-content" id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any queries, feel free to reach out:</p>
+        <p>Email: contact@ashnovaglobal.com</p>
+        <p>Phone: +91-1234567890</p>
+        <p>Address: 123 Global Street, New York, USA</p>
+    </div>
+
+    <!-- Footer with Social Links -->
+    <footer>
+        <p>Follow us on social media:</p>
+        <a href="https://instagram.com/ashnovaglobal" target="_blank">Instagram</a> |
+        <a href="https://youtube.com/ashnovaglobal" target="_blank">YouTube</a> |
+        <a href="https://twitter.com/ashnovaglobal" target="_blank">Twitter</a> <!-- Add more links as needed -->
+        <p>&copy; 2023 AshnovaGlobal. All rights reserved.</p>
+    </footer>
 </body>
 </html>
